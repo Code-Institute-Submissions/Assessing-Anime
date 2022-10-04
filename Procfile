@@ -1,1 +1,1 @@
-web: gunicorn assessing_anime.wsgi
+web: gunicorn assessing_anime.wsgi:application
