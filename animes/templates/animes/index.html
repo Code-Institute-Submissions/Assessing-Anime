@@ -2,7 +2,7 @@
     
     <ul>
         <li>
-            <a href="/animes/{{item.id}}"> {{item.id}} -- {{item.item_name}} </a>
+            <a href="{% url 'review' item.id %}"> {{item.id}} -- {{item.item_name}} </a>
         </li>
     </ul>
 {% endfor %}
