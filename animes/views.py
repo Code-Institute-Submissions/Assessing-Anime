@@ -16,3 +16,6 @@ def index(request):
 
 def item(request):
     return HttpResponse('Item view')
+
+def review(request,item_id):
+    return HttpResponse('This is item no/id: %s' % item_id)
