@@ -9,7 +9,7 @@ from django.template import loader
 
 class ItemList(generic.ListView):
     model = Item
-    queryset = Item.objects.filter(status=1).order_by('created_on')
+    queryset = Item.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 6
 
