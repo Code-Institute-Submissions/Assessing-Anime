@@ -1,6 +1,27 @@
 {% extends 'animes/base.html' %}
 
 {% block body %}
-<h1>{{ item.item_name }}</h1>
-<p>{{ item.excerpt }}</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            {% if 'placeholder' in item.featured_image.url %}
+            <img height="500px" class="card-img-top" 
+            src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+            {% else %}
+            <img height="500px" class="card-img-top" src=" {{item.featured_image.url}}">
+            {% endif %}
+            <div class="image-flash">
+                <p class="author">author: {{ item.author }}</p>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <h1>{{ item.item_name }}</h1>
+            <p>{{ item.excerpt }}</p>
+
+        </div>
+    </div>
+</div>
+
 {% endblock %}
