@@ -1,8 +1,11 @@
 # Milestone project 4
 # Assessing Anime
 
-["Assessing Anime"]() is a website designed to entertain and quiz people of all ages on thier general knowledge.  
+["Assessing Anime"]() is a website designed for people to give their opinions and read reviews on anime that they have watched. 
 
+This website was targeted at people who want to gain more information on anime they want to watch and get other peoples views and ratings on that. There will be a description section which is going to allow further details of any anime to be published. There will also be a review section which would allow people to log on and add their opinions and scores on different anime they have watched. This in turn will encourage more people to watch more anime. 
+Reviews have been shown to greatly help when it comes to improving customer loyalty and customer service as they feel they have a voice through active engagement. Also reviews allow for better credibility with suggestions as there is social proof.
+This website was built using knowledge gained from HTML, CSS, JavaScript, Python and Django modules, for the purpose of completing my fourth Milestone Project for the Code Institute's full stack developer course. This website is easy to navigate and easy to read, with a clear goal and aim.
 
 
  # User Experience/User Interface (UX/UI)
