@@ -23,13 +23,15 @@
                                     <p class="author">author: {{ item.author }}</p>
                                 </div>
                             </div>
-                            <a href="#" class="post-link">
-                                <h2 class="card-title">{{ item.item_name }}</h2>
+                                <h2 class="card-title">{{ item.item_name }}
+                                    <i class="far fa-heart"></i>{{ item.likes }} 
+                                </h2>
                                 <p class="card-text">{{ item.excerpt }}</p>
-                            </a>
+                                <a href="{% url 'animes:review' item.id %}" class="btn btn-success">Reviews</a>
+                        
                             <hr />
                             <p class="card-text text-muted h6"> {{ item.created_on }} 
-                                <i class="far fa-heart"></i>{{ item.likes }} </p>
+                               </p>
 
                         </div>
                     </div>
