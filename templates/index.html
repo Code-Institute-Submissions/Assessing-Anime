@@ -24,7 +24,23 @@
                                 </div>
                             </div>
                                 <h2 class="card-title">{{ item.item_name }}
-                                    <i class="far fa-heart"></i>{{ item.likes }} 
+                                        <strong>
+                                            {% if user.is_authenticated %}
+                                            <form class="d-inline" action="{% url 'ItemList' Item.slug %}" method="POST">
+                                                {% csrf_token %}
+                                                {% if liked %}
+                                                <button type="submit" name="animepost_id" value="{{Item.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                                {% else %}
+                                                <button type="submit" name="animepost_id" value="{{Item.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                                {% endif %}
+                                            </form>
+                                            {% else %}
+                                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                            {% endif %}
+                                        <!-- The number of likes goes before the closing strong tag -->
+                                        <span class="text-secondary">{{ Item.number_of_likes }} </span>
+                                        </strong>
+                                   
                                 </h2>
                                 <p class="card-text">{{ item.excerpt }}</p>
                                 <a href="{% url 'animes:review' item.id %}" class="btn btn-success">Reviews</a>

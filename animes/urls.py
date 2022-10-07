@@ -4,11 +4,12 @@ from django.urls import path
 app_name = 'animes'
 urlpatterns = [
     #/animes/
-    path('', views.index, name='index'),
+    path('', views.ItemList.as_view(), name='ItemList'),
     #/animes/1
-    path('<int:item_id>', views.review, name='review'),
-    path('item/', views.item, name='item'),
+    #path('item/', views.item, name='item'),
     #add items
     path('add', views.create_item, name='create_item'),
-
+    #view likes
+    path('like/<slug:slug>', views.AnimeLikes.as_view(), name='anime_likes'),
+    path('<slug:slug>/', views.review, name='review'),
 ]
