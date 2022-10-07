@@ -20,7 +20,7 @@ def index(request):
         'item_list': item_list,
     }
 
-    return render(request, 'animes/index.html', context)
+    return render(request, 'index.html', context)
 
 def item(request):
     return HttpResponse('Item view')
@@ -31,7 +31,7 @@ def review(request, item_id):
         'item':item,
     }
 
-    return render(request, 'animes/review.html', context)
+    return render(request, 'review.html', context)
 
 def create_item(request):
     form = ItemForm(request.POST or None)
@@ -40,4 +40,4 @@ def create_item(request):
         form.save()
         return redirect('animes:index')
 
-    return render(request, 'animes/item-form.html', {'form': form})
+    return render(request, 'item-form.html', {'form': form})
