@@ -47,7 +47,7 @@ def create_item(request):
 
     if form.is_valid():
         form.save()
-        return redirect('animes:index')
+        return redirect('animes:ItemList')
 
     return render(request, 'item-form.html', {'form': form})
 
