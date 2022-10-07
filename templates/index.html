@@ -26,7 +26,7 @@
                                 <h2 class="card-title">{{ item.item_name }}
                                         <strong>
                                             {% if user.is_authenticated %}
-                                            <form class="d-inline" action="{% url 'ItemList' Item.slug %}" method="POST">
+                                            <form class="d-inline" action="{% url 'animes:ItemList' %}" method="POST">
                                                 {% csrf_token %}
                                                 {% if liked %}
                                                 <button type="submit" name="animepost_id" value="{{Item.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>

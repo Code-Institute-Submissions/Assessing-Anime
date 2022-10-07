@@ -11,5 +11,5 @@ urlpatterns = [
     path('add', views.create_item, name='create_item'),
     #view likes
     path('like/<slug:slug>', views.AnimeLikes.as_view(), name='anime_likes'),
-    path('<slug:slug>/', views.review, name='review'),
+    path('<int:item_id>/', views.review, name='review'),
 ]
