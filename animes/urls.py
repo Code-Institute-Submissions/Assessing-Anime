@@ -6,7 +6,7 @@ urlpatterns = [
     #/animes/
     path('', views.ItemList.as_view(), name='ItemList'),
     #/animes/1
-    #path('item/', views.item, name='item'),
+    path('item/', views.item, name='item'),
     #add items
     path('add', views.create_item, name='create_item'),
     #view likes
