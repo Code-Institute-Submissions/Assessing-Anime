@@ -43,6 +43,8 @@
                                    
                                 </h2>
                                 <p class="card-text">{{ item.excerpt }}</p>
+                                <a href="{% url 'animes:update_item' item.id %}" class="btn">Edit Post</a>
+                                <a href="{% url 'animes:delete_item' item.id %}" class="btn">Delete Post</a>
                                 <a href="{% url 'animes:review' item.id %}" class="btn btn-success">Reviews</a>
                         
                             <hr />

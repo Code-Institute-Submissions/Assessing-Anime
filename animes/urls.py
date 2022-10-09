@@ -15,5 +15,7 @@ urlpatterns = [
     path('<int:item_id>/', views.review, name='review'),
     #edit anime
     path('update/<int:id>/', views.update_item, name='update_item'),
+    #delete anime
+    path('delete/<int:id>/', views.delete_item, name='delete_item'),
 
 ]
