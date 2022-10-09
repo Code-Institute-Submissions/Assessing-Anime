@@ -19,9 +19,7 @@
                                 {% else %}
                                 <img class="card-img-top" src=" {{item.featured_image.url}}">
                                 {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">author: {{ item.author }}</p>
-                                </div>
+                                
                             </div>
                                 <h2 class="card-title">{{ item.item_name }}
                                         <strong>
@@ -43,13 +41,19 @@
                                    
                                 </h2>
                                 <p class="card-text">{{ item.excerpt }}</p>
+                                {% if user.is_authenticated %}
                                 <a href="{% url 'animes:update_item' item.id %}" class="btn">Edit Post</a>
                                 <a href="{% url 'animes:delete_item' item.id %}" class="btn">Delete Post</a>
                                 <a href="{% url 'animes:review' item.id %}" class="btn btn-success">Reviews</a>
+                                {% else %}
+                                <a href="{% url 'animes:review' item.id %}" class="btn btn-success">Reviews</a>
+                                {% endif %}
+
                         
                             <hr />
                             <p class="card-text text-muted h6"> {{ item.created_on }} 
                                </p>
+                               <p class="author">author: {{ item.author }}</p>
 
                         </div>
                     </div>
