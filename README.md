@@ -1,7 +1,7 @@
 # Milestone project 4
 # Assessing Anime
 
-["Assessing Anime"]() is a website designed for people to give their opinions and read reviews on anime that they have watched. 
+["Assessing Anime"](https://assessing-anime.herokuapp.com/) is a website designed for people to add descriptions, give their opinions and read reviews on anime that they have watched. 
 
 This website was targeted at people who want to gain more information on anime they want to watch and get other peoples views and ratings on that. There will be a description section which is going to allow further details of any anime to be published. There will also be a review section which would allow people to log on and add their opinions and scores on different anime they have watched. This in turn will encourage more people to watch more anime. 
 Reviews have been shown to greatly help when it comes to improving customer loyalty and customer service as they feel they have a voice through active engagement. Also reviews allow for better credibility with suggestions as there is social proof.
@@ -13,22 +13,31 @@ This website was built using knowledge gained from HTML, CSS, JavaScript, Python
  - ## User Stories
    ### First Time User Goals
    As a first time user I want:
-   -   
-   -   
-   -   
-   - 
+   - to register an account so that I can like reviews.
+   - to view the different anime post and their description.  
+   - to view the number of likes on each review so that I can see which is the most popular. 
+   - to view the website on various different devices so that I am not limited when accessing the website on different devices.
+   - to locate and access the linked social media so that I can find out more information.
+   - to navigate the homepage with ease so that I can successfully use the website without further help.
+   - to read reviews left by previous users so that I can benefit from their advice.
+   - to locate and access the contact page so that I can easily contact the restaurant for further information.
    
-   ### Frequent User Goals
-   As a frequent user I want:
-   - 
-   - 
-   - 
+   ### Logged-in User Goals
+   As a logged in user I want:
+   - to add post so that other users can learn more about the anime.
+   - to delete and edit a post so that if information is incorrect I can update accordingly.
+   - to like or unlike a review so that that I can interact with the content.
+   - to delete and edit a review so that if my mind is changed I can update accordingly.
+   - to create reviews so that other users can benefit from my advice.
+
 
    ### Developer's Goals.
    As the developer I want:
-   - 
-   - 
-   - 
+   - to approve or disapprove posts so that I can filter out incorrect posts.
+   - to create, read, update and delete posts so that I can manage the content.
+   - to create, read, update and delete reviews so that I can manage my content.
+   - to approve or disapprove reviews so that I can filter out inappropriate reviews.
+   - to provide an interactive and eye-catching website so that users are encouraged to revisit.
  
  - ## Design 
    ### Colour Scheme
